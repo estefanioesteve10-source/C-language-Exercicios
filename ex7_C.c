@@ -1,19 +1,14 @@
 #include <stdio.h>
-
-int main() {
-    int numbers [5];
-
+int const size = 6;
+int main(void) {
+    int numbers [size];
     numbers[0] = 1;
-    numbers[1] =  numbers[0] * 2;
-    numbers[2] =  numbers[1] * 2;
-    numbers[3] =  numbers[2] * 2;
-    numbers[4] =  numbers[3] * 2;
 
-    for(int i = 0; i < 5; i++) {
-        printf("%d\n", numbers[i]);
+    for (int i = 1; i < size; i++) {
+        numbers[i] = numbers[i-1] * 2;
     }
 
-    return 0;
-
-    
+    for(int i = 0; i < size; i++) {
+        printf("%d\n", numbers[i]);
+    }
 }
