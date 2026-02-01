@@ -1,1 +1,2 @@
-#Repositorio de exercicios em C
+#Repositorio de exercicios em linguangem C
+
